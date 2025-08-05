@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCODE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="bg-black text-gray-200 font-sans min-h-screen leading-relaxed relative overflow-hidden">
+    <img
+      src="gradient.png"
+      alt="gradient"
+      class="absolute top-0 right-0 opacity-50 -z-10"
+    />
+    <div
+      class="absolute top-1/5 right-0 w-[30rem] h-0 rotate-[-30deg] shadow-[0_0_700px_15px_white] -z-10"
+    ></div>
+
+    <div class="relative px-8">
+      <header class="flex justify-between items-center py-4 md:px-20">
+        <h1 data-aos="fade-down" data-aos-duration="1500" class="text-5xl font-light">
+          MCODE
+        </h1>
+
+        <nav class="hidden md:flex items-center gap-12 -ml-[5 ] z-10">
+          <a data-aos="fade-down" data-aos-duration="1500" href="#" class="hover:text-pink-200">COMPANY</a>
+          <a data-aos="fade-down" data-aos-duration="2000" href="#" class="hover:text-pink-200">FEATURES</a>
+          <a data-aos="fade-down" data-aos-duration="2500" href="#" class="hover:text-pink-200">RESOURCES</a>
+          <a data-aos="fade-down" data-aos-duration="3000" href="#" class="hover:text-pink-200">DOCS</a>
+        </nav>
+
+        <button
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          class="bg-gray-400 text-black py-2 px-6 rounded-full font-medium hover:bg-white z-10" 
+        >
+          SIGNING
+        </button>
+      </header>
+
+      <main class="flex flex-col justify-center min-h-[90vh]">
+        <div class="max-w-2xl ml-10 z-10">
+          <div
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="1500"
+            class="relative w-72 h-10 rounded-full bg-gradient-to-r from-gray-600 via-purple-700 to-purple-900 bg-[length:200%] animate-[animationGradient_2.5s_linear_infinite] shadow-md"
+          >
+            <div
+              class="absolute inset-[3px] bg-black rounded-full flex items-center justify-center cursor-pointer hover:text-purple-700"
+            >
+              INTRUCING &wedbar;
+            </div>
+          </div>
+
+          <h1
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="2000"
+            class="font-semibold text-5xl mt-8 mb-4 leading-tight tracking-wide text-shadow"
+          >
+            EMAIL for <br />DEVELOPERS
+          </h1>
+
+          <p
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="2500"
+            class="text-gray-400 text-lg tracking-wide max-w-xl"
+          >
+            The best way to reach humans is by building strong connections
+          </p>
+
+          <div
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="3000"
+            class="flex gap-4 mt-12"
+          >
+            <a
+              href="#"
+              class="border border-gray-800 py-2 px-4 rounded-full text-lg font-semibold tracking-wider hover:bg-purple-400/30"
+            >
+              Documentation &gt;
+            </a>
+            <a
+              href="#"
+              class=" border border-gray-800 py-2 px-4 rounded-full text-lg font-semibold tracking-wider hover:bg-purple-400/30"
+            >
+              Getstarted &gt;
+            </a>
+          </div>
+        </div>
+
+        <spline-viewer
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+          data-aos-duration="3000"
+          class="absolute top-0 right-[-23%] scale-100 md:scale-75 md:top-[-10%] md:right-[-35%]"
+          url="https://prod.spline.design/ar-k874AzXv52b7u/scene.splinecode"
+        ></spline-viewer>
+      </main>
+    </div>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.94/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <style>
+      @keyframes animationGradient {
+        to {
+          background-position: 200%;
+        }
+      }
+      .text-shadow {
+        text-shadow: 0 0 10px rgba(128, 128, 128, 0.418);
+      }
+    </style>
+  </body>
+</html>
